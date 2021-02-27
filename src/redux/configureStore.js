@@ -14,17 +14,17 @@ import { RoomsReducer                  } from './roomsReducer';
 export const ConfigureStore = () => {
    const oReduxStore = createStore(
       combineReducers({
-         application: ApplicationReducer,
-         header: HeaderReducer,
-         home: HomeReducer,  		  
-         obstacles: ObstaclesReducer,
-         lights: LightsReducer,
-         items: ItemsReducer,
-         splashes: SplashesReducer,
-         objects: ObjectsReducer,
-         enemies: EnemiesReducer,
-         sensors: SensorsReducer,
-         rooms: RoomsReducer
+         application : ApplicationReducer,
+         header      : HeaderReducer,
+         home        : HomeReducer,  		  
+         obstacles   : ObstaclesReducer,
+         lights      : LightsReducer,
+         items       : ItemsReducer,
+         splashes    : SplashesReducer,
+         objects     : ObjectsReducer,
+         enemies     : EnemiesReducer,
+         sensors     : SensorsReducer,
+         rooms       : RoomsReducer
       }),
    );
    
