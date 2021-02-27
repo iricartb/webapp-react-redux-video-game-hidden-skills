@@ -3,7 +3,7 @@ import CMessage from '../classes/CMessage';
 
 let sPatternUrlRoomsImages = 'images/rooms/room{1}.png';
 let oRooms = (sVersion, sLanguage) => {
-   
+
    if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
       return ({   
          'types': [
@@ -39,14 +39,14 @@ let oRooms = (sVersion, sLanguage) => {
                ],
                'end': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ROOMS_HEADER_SECTION_XML_SPECIFICATION_END'),
             },
-			'skeleton': {
-			   'html': true,
-			   'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ROOMS_HEADER_SECTION_XML_SPECIFICATION_SKELETON')
-			},
+            'skeleton': {
+               'html': true,
+               'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ROOMS_HEADER_SECTION_XML_SPECIFICATION_SKELETON')
+            },
             'example': {
-			   'html': true,
-			   'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ROOMS_HEADER_SECTION_XML_SPECIFICATION_EXAMPLE')
-			}
+               'html': true,
+               'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ROOMS_HEADER_SECTION_XML_SPECIFICATION_EXAMPLE')
+            }
          }
       });
    }

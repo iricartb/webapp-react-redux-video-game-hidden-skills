@@ -11,18 +11,18 @@ import CApplication from '../classes/CApplication';
 import CMessage from '../classes/CMessage';
 
 let oHeader = (sVersion, sLanguage) => {
-    
+
    if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
       return({
          'menu': {
             'title': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_TITLE'),
-		    'versions': [
-		      {
-			      'id': 1,
-		         'name': CApplication.APPLICATION_VERSION_FIRST,
-				   'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_VERSIONS_FIRST')
-			   }			   
-		    ],
+            'versions': [
+               {
+                  'id': 1,
+                  'name': CApplication.APPLICATION_VERSION_FIRST,
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_VERSIONS_FIRST')
+               }			   
+            ],
             'items': [
                { 
                   'id': 1,
@@ -92,27 +92,27 @@ let oHeader = (sVersion, sLanguage) => {
                {
                   'id': 1,
                   'name': CApplication.APPLICATION_LANGUAGE_ENGLISH,
-				      'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_ENGLISH')       
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_ENGLISH')       
                },
                {
                   'id': 2,
                   'name': CApplication.APPLICATION_LANGUAGE_SPANISH,
-				      'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_SPANISH')
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_SPANISH')
                },
                {
                   'id': 3,
                   'name': CApplication.APPLICATION_LANGUAGE_FRENCH,
-				      'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_FRENCH')
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_FRENCH')
                },
                {
                   'id': 4,
                   'name': CApplication.APPLICATION_LANGUAGE_ITALIAN,
-				      'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_ITALIAN')
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_ITALIAN')
                },
                {
                   'id': 5,
                   'name': CApplication.APPLICATION_LANGUAGE_RUSSIAN,
-				      'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_RUSSIAN')
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_RUSSIAN')
                }         
             ]
          },

@@ -3,7 +3,7 @@ import CMessage from '../classes/CMessage';
 
 let sPatternUrlScreenshotsImages = 'images/screenshots/screenshot{1}.jpg';
 let oHome = (sVersion, sLanguage) => {
-    
+
    if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
       return({
          'videogame': {
@@ -33,38 +33,38 @@ let oHome = (sVersion, sLanguage) => {
          'platforms': {
             'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS'),
             'releases': [
-			   { 
-			      'id': 1,
-			      'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1'),
-				   'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_1'), 
-				   'items': [
-                     {
-                        'id': 1,
-                        'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_1'),
-                        'ref': ''
-                     },
-                     {
-                         'id': 2,
-                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_2'),
-                         'ref': ''
-                     },
-                     {
-                        'id': 3,
-                        'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_3'),
-                        'ref': ''
-                     },
-                     {
-                        'id': 4,
-                        'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_4'),
-                        'ref': ''
-                     }
-		          ]
-			   },
-			   { 
-			      'id': 2,
-			      'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2'),
-				   'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_2'), 
-				   'items': [
+               { 
+                  'id': 1,
+                  'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1'),
+                  'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_1'), 
+                  'items': [
+                        {
+                           'id': 1,
+                           'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_1'),
+                           'ref': ''
+                        },
+                        {
+                           'id': 2,
+                           'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_2'),
+                           'ref': ''
+                        },
+                        {
+                           'id': 3,
+                           'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_3'),
+                           'ref': ''
+                        },
+                        {
+                           'id': 4,
+                           'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_4'),
+                           'ref': ''
+                        }
+                  ]
+               },
+               { 
+                  'id': 2,
+                  'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2'),
+                  'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_2'), 
+                  'items': [
                      {
                         'id': 1,
                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_1')
@@ -83,22 +83,22 @@ let oHome = (sVersion, sLanguage) => {
                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_4'),
                         'ref': ''
                      }
-		          ]
-			   }
-			]
+                  ]
+               }
+            ]
          },
          'sources': {
             'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE'),
             'items': [
-			   { 
-			      'id': 1,
-				   'provider': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_PROVIDER_1'),
-				   'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_NAME_1'),
-				   'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_DESCRIPTION_1'),
-				   'link': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_LINK_1')
-			   }
-			]
-		 },
+               { 
+                  'id': 1,
+                  'provider': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_PROVIDER_1'),
+                  'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_NAME_1'),
+                  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_DESCRIPTION_1'),
+                  'link': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_LINK_1')
+               }
+            ]
+         },
          'comments': {
             'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS'), 
             'items': [

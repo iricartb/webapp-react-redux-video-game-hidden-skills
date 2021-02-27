@@ -3,7 +3,7 @@ import CMessage from '../classes/CMessage';
 
 let sPatternUrlSensorsImages = 'images/sensors/sensor{1}.png';
 let oSensors = (sVersion, sLanguage) => {
-   
+
    if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
       return ({   
          'types': [

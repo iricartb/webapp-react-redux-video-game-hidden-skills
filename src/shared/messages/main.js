@@ -1,7 +1,7 @@
 import CApplication from '../classes/CApplication';
 
 let oMain = [
-   { 
+   {
       'version': CApplication.APPLICATION_VERSION_FIRST,	   
       'language': CApplication.APPLICATION_LANGUAGE_ENGLISH,
       'messages': {
