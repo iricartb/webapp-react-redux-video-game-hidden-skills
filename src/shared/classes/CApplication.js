@@ -1,8 +1,8 @@
 class CApplication {
    static APPLICATION_NAME = 'Hidden Skills';
-   
+
    static APPLICATION_VERSION_FIRST = 'FIRST'; 
-   
+
    static APPLICATION_LANGUAGE_ENGLISH = 'ENGLISH';
    static APPLICATION_LANGUAGE_SPANISH = 'SPANISH';
    static APPLICATION_LANGUAGE_FRENCH = 'FRENCH';

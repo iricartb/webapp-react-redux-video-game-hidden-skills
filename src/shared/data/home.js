@@ -36,8 +36,8 @@ let oHome = (sVersion, sLanguage) => {
 			   { 
 			      'id': 1,
 			      'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1'),
-				  'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_1'), 
-				  'items': [
+				   'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_1'), 
+				   'items': [
                      {
                         'id': 1,
                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_1_TEXT_NAME_1'),
@@ -63,15 +63,15 @@ let oHome = (sVersion, sLanguage) => {
 			   { 
 			      'id': 2,
 			      'header': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2'),
-				  'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_2'), 
-				  'items': [
+				   'levels': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_LEVELS_2'), 
+				   'items': [
                      {
                         'id': 1,
                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_1')
                      },
                      {
-                         'id': 2,
-                         'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_2')
+                        'id': 2,
+                        'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_2')
                      },
                      {
                         'id': 3,
@@ -92,10 +92,10 @@ let oHome = (sVersion, sLanguage) => {
             'items': [
 			   { 
 			      'id': 1,
-				  'provider': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_PROVIDER_1'),
-				  'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_NAME_1'),
-				  'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_DESCRIPTION_1'),
-				  'link': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_LINK_1')
+				   'provider': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_PROVIDER_1'),
+				   'name': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_NAME_1'),
+				   'description': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_DESCRIPTION_1'),
+				   'link': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SOURCE_CODE_TEXT_LINK_1')
 			   }
 			]
 		 },
