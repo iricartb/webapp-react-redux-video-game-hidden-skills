@@ -61,18 +61,18 @@ class AppPageHome extends React.Component {
                            <Row>
                               {oRelease.items.map((oItem) => {
                                  return(
-                                          <Col key={oItem.id} className="app-page-home-platform-item" xs={12}>
-                                    {(oItem.ref !== undefined) ? 
-                                       <Button className="app-page-home-platform-item-button" variant="danger">{oItem.name}</Button>
-                                    : CString.STRING_EMPTY
-                                    }
-                                          </Col> 
+                                    <Col key={oItem.id} className="app-page-home-platform-item" xs={12}>
+                                       {(oItem.ref !== undefined) ? 
+                                          <Button className="app-page-home-platform-item-button" variant="danger">{oItem.name}</Button>
+                                          : CString.STRING_EMPTY
+                                       }
+                                    </Col> 
                                  );
                               })}
                            </Row>
                            </td>
-                     </tr>				 
-                        );      
+                        </tr>
+                        );
                      })}
                   </tbody>
                </Table>
@@ -80,19 +80,19 @@ class AppPageHome extends React.Component {
 
             <HeaderSection title={oHomeData.sources.header} />
             <Container>
-            <Table striped bordered hover className="table-code">
-               <tbody> 
+               <Table striped bordered hover className="table-code">
+                  <tbody> 
                      {oHomeData.sources.items.map((oItem) => {
                         return(
-                     <tr key={oItem.id}>
-                        <td className="app-page-home-source-item-name">{oItem.name.toUpperCase()}</td>
-                        <td className="app-page-home-source-item-provider">{oItem.provider.toUpperCase()}</td> 							  
-                        <td><a target="_blank" href={oItem.link}>{oItem.description}</a></td> 
+                           <tr key={oItem.id}>
+                              <td className="app-page-home-source-item-name">{oItem.name.toUpperCase()}</td>
+                              <td className="app-page-home-source-item-provider">{oItem.provider.toUpperCase()}</td> 							  
+                              <td><a target="_blank" href={oItem.link}>{oItem.description}</a></td> 
                            </tr> 							  
-                  );
-                  })}
+                        );
+                     })}
                   </tbody>
-               </Table>	
+               </Table>
             </Container>
          
             <HeaderSection title={oHomeData.comments.header} />
@@ -109,8 +109,8 @@ class AppPageHome extends React.Component {
                               </p>
                            </Alert>
                            <ProgressBar variant={oItem.progressbar.status} now={oItem.progressbar.value} label={`${oItem.progressbar.value} %`} />
-                        </Col>       
-                     );      
+                        </Col>
+                     );
                   })}
                </Row>
             </Container>
