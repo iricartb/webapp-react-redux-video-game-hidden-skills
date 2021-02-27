@@ -5,11 +5,11 @@ class AppPageError extends React.Component {
    constructor(props) {
       super(props);
    }
-   
+
    componentDidMount() {
       document.body.style.backgroundColor = 'red';
    }
-   
+
    render() {
       return(
          <div id="id-app-page-error-root">

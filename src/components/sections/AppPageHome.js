@@ -4,17 +4,17 @@ import HeaderSection from './HeaderSection';
 import CString from '../../shared/classes/CString';
 
 class AppPageHome extends React.Component {
-   
+
    constructor(props) {
       super(props);
    }
-   
+
    render() {
       let oHomeData = this.props.home(this.props.application.version, this.props.application.language);
-	  
+      
       return(
          <div id="id-app-page-home-root">
-			<HeaderSection title={oHomeData.videogame.header} />
+            <HeaderSection title={oHomeData.videogame.header} />
             <Container>
                <Row>
                   <Col className="app-page-home-videogame">
@@ -26,7 +26,7 @@ class AppPageHome extends React.Component {
                   </Col>
                </Row>
             </Container>
-      
+
             <HeaderSection title={oHomeData.screenshots.header} />
             <Container>    
                <Row>
@@ -43,59 +43,59 @@ class AppPageHome extends React.Component {
                               </Carousel.Item>         
                            );      
                         })}
-  			         </Carousel>
+                  </Carousel>
                   </Col>
                </Row>
             </Container>
-		
-		    <HeaderSection title={oHomeData.platforms.header} />
-			<Container>
-			   <Table striped bordered hover className="table-code">
-			      <tbody> 
+
+            <HeaderSection title={oHomeData.platforms.header} />
+            <Container>
+               <Table striped bordered hover className="table-code">
+                  <tbody> 
                      {oHomeData.platforms.releases.map((oRelease) => {
                         return(
-				           <tr key={oRelease.id}>
-				              <td className="app-page-home-platform-items-header">{oRelease.header.toUpperCase()}</td>
-							  <td className="app-page-home-platform-items-levels">{oRelease.levels.toUpperCase()}</td>
-						      <td>
-						         <Row>
-				  		            {oRelease.items.map((oItem) => {
-						               return(
+                        <tr key={oRelease.id}>
+                           <td className="app-page-home-platform-items-header">{oRelease.header.toUpperCase()}</td>
+                        <td className="app-page-home-platform-items-levels">{oRelease.levels.toUpperCase()}</td>
+                        <td>
+                           <Row>
+                              {oRelease.items.map((oItem) => {
+                                 return(
                                           <Col key={oItem.id} className="app-page-home-platform-item" xs={12}>
-											 {(oItem.ref !== undefined) ? 
-											    <Button className="app-page-home-platform-item-button" variant="danger">{oItem.name}</Button>
-											  : CString.STRING_EMPTY
-											 }
+                                    {(oItem.ref !== undefined) ? 
+                                       <Button className="app-page-home-platform-item-button" variant="danger">{oItem.name}</Button>
+                                    : CString.STRING_EMPTY
+                                    }
                                           </Col> 
-						               );
-						            })}
-							     </Row>
-   						      </td>
-						   </tr>				 
+                                 );
+                              })}
+                           </Row>
+                           </td>
+                     </tr>				 
                         );      
                      })}
                   </tbody>
                </Table>
-			</Container>
-			
+            </Container>
+
             <HeaderSection title={oHomeData.sources.header} />
             <Container>
-			   <Table striped bordered hover className="table-code">
-			      <tbody> 
+            <Table striped bordered hover className="table-code">
+               <tbody> 
                      {oHomeData.sources.items.map((oItem) => {
                         return(
-						   <tr key={oItem.id}>
-						      <td className="app-page-home-source-item-name">{oItem.name.toUpperCase()}</td>
-						      <td className="app-page-home-source-item-provider">{oItem.provider.toUpperCase()}</td> 							  
-							  <td><a target="_blank" href={oItem.link}>{oItem.description}</a></td> 
+                     <tr key={oItem.id}>
+                        <td className="app-page-home-source-item-name">{oItem.name.toUpperCase()}</td>
+                        <td className="app-page-home-source-item-provider">{oItem.provider.toUpperCase()}</td> 							  
+                        <td><a target="_blank" href={oItem.link}>{oItem.description}</a></td> 
                            </tr> 							  
-						);
-					 })}
+                  );
+                  })}
                   </tbody>
                </Table>	
             </Container>
-			
-		    <HeaderSection title={oHomeData.comments.header} />
+         
+            <HeaderSection title={oHomeData.comments.header} />
             <Container>    
                <Row>
                   {oHomeData.comments.items.map((oItem) => {
@@ -114,7 +114,7 @@ class AppPageHome extends React.Component {
                   })}
                </Row>
             </Container>
-		 </div>
+         </div>
       );
    }
 }

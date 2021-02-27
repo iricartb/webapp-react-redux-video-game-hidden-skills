@@ -45,13 +45,13 @@ const getAppLayoutError = (Component, oParentProps = {}, oComponentProps = {}) =
    return () => (
       <div id="id-app-skeleton-layout-error-root">
          <Component {...oParentProps} {...oComponentProps} />
-	   </div>
+      </div>
    );
 };
 
 class Main extends React.Component {
    constructor(props) {
-	   super(props);
+      super(props);
    }
    
    render() {
@@ -68,8 +68,8 @@ class Main extends React.Component {
          'menu-languages': oMenuLanguages,
          'media-clip-ref': sMediaClipRef
       }
-	  
-	  return(
+
+      return(
          <div>
             <Switch>
                {(oMenuItems.length > 0) ? <Route path="/" component={getAppLayout(oMenuItems[0].component, {...this.props, ...oInjectedProps}, oMenuItems[0]['component-props'])} exact={true} /> : <div></div>}
@@ -81,7 +81,7 @@ class Main extends React.Component {
                <Route component={getAppLayoutError(AppPageError, {...this.props, ...oInjectedProps}, {code: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_CODE'), description: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_DESCRIPTION')})} />
             </Switch>
          </div>
-	  );
+      );
    }
 }
 
