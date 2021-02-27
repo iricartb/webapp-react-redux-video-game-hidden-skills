@@ -1,0 +1,33 @@
+.header-menu-title {
+   margin-right: 3rem !important;
+}
+
+.header-menu-item {
+   color: black;
+   margin-right: 1.5rem;
+   font-size: 1.1rem;
+}
+
+.header-menu-item:hover {
+   color: red;
+   text-decoration: none;
+}
+
+.header-menu-item-active {
+   color: red;
+   font-weight: bold;
+}
+
+.header-menu-version {
+   margin-left: 0.6rem;
+   margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
+   font-size: 0.93rem;
+}
+
+.header-menu-language {
+   margin-right: 0.6rem;
+   margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
+   font-size: 0.93rem;
+}
