@@ -6,7 +6,7 @@ class HeaderMenu extends React.Component {
    constructor(props) {
       super(props);
 
-      this.handleClickVersion = this.handleClickVersion.bind(this);
+      this.handleClickVersion  = this.handleClickVersion.bind(this);
       this.handleClickLanguage = this.handleClickLanguage.bind(this);
    }
 

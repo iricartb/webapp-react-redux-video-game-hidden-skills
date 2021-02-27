@@ -23,8 +23,8 @@ const oMapStateToProps = (oState) => ({
 });
 
 const oMapDispatchToProps = (dispatch) => ({
-   setApplicationVersion: (sVersion) => {dispatch(setApplicationVersion(sVersion))},
-   setApplicationLanguage: (sLanguage) => {dispatch(setApplicationLanguage(sLanguage))}
+   setApplicationVersion  : (sVersion)  => {dispatch(setApplicationVersion(sVersion))},
+   setApplicationLanguage : (sLanguage) => {dispatch(setApplicationLanguage(sLanguage))}
 });
 
 const getAppLayout = (Component, oParentProps = {}, oComponentProps = {}) => {
@@ -55,18 +55,18 @@ class Main extends React.Component {
    }
    
    render() {
-      let sMenuTitle = this.props.header(this.props.application.version, this.props.application.language).menu.title;
-      let oMenuVersions = this.props.header(this.props.application.version, this.props.application.language).menu.versions;
-      let oMenuItems = this.props.header(this.props.application.version, this.props.application.language).menu.items;
+      let sMenuTitle     = this.props.header(this.props.application.version, this.props.application.language).menu.title;
+      let oMenuVersions  = this.props.header(this.props.application.version, this.props.application.language).menu.versions;
+      let oMenuItems     = this.props.header(this.props.application.version, this.props.application.language).menu.items;
       let oMenuLanguages = this.props.header(this.props.application.version, this.props.application.language).menu.languages;
-      let sMediaClipRef = this.props.header(this.props.application.version, this.props.application.language).clip.ref;
+      let sMediaClipRef  = this.props.header(this.props.application.version, this.props.application.language).clip.ref;
 
       let oInjectedProps = {
-         'menu-title': sMenuTitle,
-         'menu-versions': oMenuVersions,
-         'menu-items': oMenuItems,
-         'menu-languages': oMenuLanguages,
-         'media-clip-ref': sMediaClipRef
+         'menu-title'     : sMenuTitle,
+         'menu-versions'  : oMenuVersions,
+         'menu-items'     : oMenuItems,
+         'menu-languages' : oMenuLanguages,
+         'media-clip-ref' : sMediaClipRef
       }
 
       return(

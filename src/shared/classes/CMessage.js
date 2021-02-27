@@ -5,10 +5,10 @@ import oMessagesMain          from '../messages/main';
 
 class CMessage {
    static getMessage(sVersion, sLanguage, sFile, sKey, oParameters = []) {
-      let sMessage = sKey;
-      let oContextCApplication = CApplication;
+      let sMessage                    = sKey;
+      let oContextCApplication        = CApplication;
       let oContextMessagesApplication = oMessagesApplication;
-      let oContextMessagesMain = oMessagesMain;
+      let oContextMessagesMain        = oMessagesMain;
 
       let oLanguageMessages = eval('oContextMessages' + sFile.substr(0, 1).toUpperCase() + sFile.substr(1, sFile.length)).filter((oLanguageMessages) => {
          if (sVersion === null) return oLanguageMessages.language === eval('oContextCApplication.APPLICATION_LANGUAGE_' + sLanguage)
