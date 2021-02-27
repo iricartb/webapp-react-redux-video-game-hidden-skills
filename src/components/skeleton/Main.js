@@ -1,10 +1,10 @@
-import React from 'react';
-import { Route, Switch  } from 'react-router-dom';
-import { connect        } from 'react-redux';
-import Header from './Header';
-import Footer from './Footer';
-import AppPageError from '../htmlcodes/AppPageError';
-import CMessage from '../../shared/classes/CMessage';
+import React                                               from 'react';
+import { Route, Switch  }                                  from 'react-router-dom';
+import { connect        }                                  from 'react-redux';
+import Header                                              from './Header';
+import Footer                                              from './Footer';
+import AppPageError                                        from '../htmlcodes/AppPageError';
+import CMessage                                            from '../../shared/classes/CMessage';
 import { setApplicationVersion, setApplicationLanguage   } from '../../redux/ActionCreators';
 import { TransitionGroup, CSSTransition                  } from 'react-transition-group';
 
