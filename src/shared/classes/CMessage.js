@@ -1,7 +1,7 @@
-import CApplication from './CApplication';
-import CString from './CString';
-import oMessagesApplication from '../messages/application';
-import oMessagesMain from '../messages/main';
+import CApplication           from './CApplication';
+import CString                from './CString';
+import oMessagesApplication   from '../messages/application';
+import oMessagesMain          from '../messages/main';
 
 class CMessage {
    static getMessage(sVersion, sLanguage, sFile, sKey, oParameters = []) {

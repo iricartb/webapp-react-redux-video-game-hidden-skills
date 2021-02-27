@@ -1,7 +1,7 @@
-import React from 'react';
+import React                                                                from 'react';
 import { Alert, Button, Carousel, Container, Col, Row, Table, ProgressBar } from 'react-bootstrap';
-import HeaderSection from './HeaderSection';
-import CString from '../../shared/classes/CString';
+import HeaderSection                                                        from './HeaderSection';
+import CString                                                              from '../../shared/classes/CString';
 
 class AppPageHome extends React.Component {
 

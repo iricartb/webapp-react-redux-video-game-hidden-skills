@@ -2,7 +2,7 @@ import * as ActionTypes from './ActionTypes';
 import oObjectsData from '../shared/data/objects';
 
 export const ObjectsReducer = (oState = oObjectsData, oAction) => {
-   switch(oAction.type) {  
+   switch(oAction.type) {
       default:
          return oState;
    }
