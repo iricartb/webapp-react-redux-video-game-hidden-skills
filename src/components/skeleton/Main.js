@@ -9,17 +9,17 @@ import { setApplicationVersion, setApplicationLanguage   } from '../../redux/Act
 import { TransitionGroup, CSSTransition                  } from 'react-transition-group';
 
 const oMapStateToProps = (oState) => ({
-   application: oState.application,
-   header: oState.header,
-   home: oState.home,
-   obstacles: oState.obstacles,
-   lights: oState.lights,
-   items: oState.items,
-   splashes: oState.splashes,
-   objects: oState.objects,
-   enemies: oState.enemies,
-   sensors: oState.sensors,
-   rooms: oState.rooms
+   application : oState.application,
+   header      : oState.header,
+   home        : oState.home,
+   obstacles   : oState.obstacles,
+   lights      : oState.lights,
+   items       : oState.items,
+   splashes    : oState.splashes,
+   objects     : oState.objects,
+   enemies     : oState.enemies,
+   sensors     : oState.sensors,
+   rooms       : oState.rooms
 });
 
 const oMapDispatchToProps = (dispatch) => ({
