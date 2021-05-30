@@ -12,7 +12,7 @@ import CMessage         from '../classes/CMessage';
 
 let oHeader = (sVersion, sLanguage) => {
 
-   if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
+   if (sVersion === CApplication.APPLICATION_VERSION_FIRST) {
       return({
          'menu': {
             'title'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_TITLE'),

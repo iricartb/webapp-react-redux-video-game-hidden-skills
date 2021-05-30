@@ -4,7 +4,7 @@ import CMessage     from '../classes/CMessage';
 let sPatternUrlLightsImages = 'images/lights/light{1}.png';
 let oLights = (sVersion, sLanguage) => {
 
-   if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
+   if (sVersion === CApplication.APPLICATION_VERSION_FIRST) {
       return ({
          'types': [
             {

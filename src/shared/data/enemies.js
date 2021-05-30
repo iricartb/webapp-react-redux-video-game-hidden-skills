@@ -4,7 +4,7 @@ import CMessage     from '../classes/CMessage';
 let sPatternUrlEnemiesImages = 'images/enemies/enemy{1}.png';
 let oEnemies = (sVersion, sLanguage) => {
     
-   if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
+   if (sVersion === CApplication.APPLICATION_VERSION_FIRST) {
       return ({
          'types': [
             {

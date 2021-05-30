@@ -1,10 +1,10 @@
+/* eslint-disable no-useless-constructor */
 import React                          from 'react';
 import { Col, Container, Row, Table } from 'react-bootstrap';
 import HeaderSection                  from './HeaderSection';
 import CString                        from '../../shared/classes/CString';
 
 class AppPageGeneric extends React.Component {
-
    constructor(props) {
       super(props);
    }

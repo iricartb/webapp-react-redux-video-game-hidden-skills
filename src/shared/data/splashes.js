@@ -4,7 +4,7 @@ import CMessage     from '../classes/CMessage';
 let sPatternUrlSplashesImages = 'images/splashes/splash{1}.png';
 let oSplashes = (sVersion, sLanguage) => {
 
-   if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
+   if (sVersion === CApplication.APPLICATION_VERSION_FIRST) {
       return ({
          'types': [
             {

@@ -4,7 +4,7 @@ import CMessage     from '../classes/CMessage';
 let sPatternUrlScreenshotsImages = 'images/screenshots/screenshot{1}.jpg';
 let oHome = (sVersion, sLanguage) => {
 
-   if (sVersion == CApplication.APPLICATION_VERSION_FIRST) {
+   if (sVersion === CApplication.APPLICATION_VERSION_FIRST) {
       return({
          'videogame' : {
             'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_VIDEOGAME_DESCRIPTION'),

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React                   from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 

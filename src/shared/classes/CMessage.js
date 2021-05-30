@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-eval */
 import CApplication           from './CApplication';
-import CString                from './CString';
 import oMessagesApplication   from '../messages/application';
 import oMessagesMain          from '../messages/main';
 

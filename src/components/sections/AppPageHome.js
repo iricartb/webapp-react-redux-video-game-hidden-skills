@@ -1,10 +1,10 @@
+/* eslint-disable no-useless-constructor */
 import React                                                                from 'react';
 import { Alert, Button, Carousel, Container, Col, Row, Table, ProgressBar } from 'react-bootstrap';
 import HeaderSection                                                        from './HeaderSection';
 import CString                                                              from '../../shared/classes/CString';
 
 class AppPageHome extends React.Component {
-
    constructor(props) {
       super(props);
    }
@@ -35,7 +35,7 @@ class AppPageHome extends React.Component {
                         {oHomeData.screenshots.items.map((oItem) => {
                            return(
                               <Carousel.Item key={oItem.id}>
-                                 <img src={oItem.image} />
+                                 <img src={oItem.image} alt={oItem.header} />
                                  <Carousel.Caption>
                                     <h3>{oItem.header}</h3>
                                     <p>{oItem.description}</p>
@@ -81,13 +81,13 @@ class AppPageHome extends React.Component {
             <HeaderSection title={oHomeData.sources.header} />
             <Container>
                <Table striped bordered hover className="table-code">
-                  <tbody> 
+                  <tbody>
                      {oHomeData.sources.items.map((oItem) => {
                         return(
                            <tr key={oItem.id}>
                               <td className="app-page-home-source-item-name">{oItem.name.toUpperCase()}</td>
                               <td className="app-page-home-source-item-provider">{oItem.provider.toUpperCase()}</td> 							  
-                              <td><a target="_blank" href={oItem.link}>{oItem.description}</a></td> 
+                              <td><a target="_blank" rel="noreferrer" href={oItem.link}>{oItem.description}</a></td> 
                            </tr> 							  
                         );
                      })}
