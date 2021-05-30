@@ -30,14 +30,12 @@ const oMapDispatchToProps = (dispatch) => ({
 
 const getAppLayout = (Component, oParentProps = {}, oComponentProps = {}) => {
    return () => (
-      <div id="id-app-skeleton-layout-root">
-         <Header {...oParentProps} />
+      <div id="id-app-skeleton-layout-content-root">
          <TransitionGroup>
             <CSSTransition classNames="page" timeout={300}>
                <Component {...oParentProps} {...oComponentProps} />
             </CSSTransition>
          </TransitionGroup>
-         <Footer {...oParentProps} />
       </div>
    );
 };
@@ -72,6 +70,7 @@ class Main extends React.Component {
 
       return(
          <div>
+            <Header {...this.props} {...oInjectedProps} />
             <Switch>
                {(oMenuItems.length > 0) ? <Route path="/" component={getAppLayout(oMenuItems[0].component, {...this.props, ...oInjectedProps}, oMenuItems[0]['component-props'])} exact={true} /> : <div></div>}
 
@@ -81,6 +80,7 @@ class Main extends React.Component {
 
                <Route component={getAppLayoutError(AppPageError, {...this.props, ...oInjectedProps}, {code: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_CODE'), description: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_DESCRIPTION')})} />
             </Switch>
+            <Footer {...this.props} {...oInjectedProps} />
          </div>
       );
    }

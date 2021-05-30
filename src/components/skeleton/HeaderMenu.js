@@ -21,7 +21,7 @@ class HeaderMenu extends React.Component {
    render() {
       return(  	   
          <div id="id-app-header-menu-root">
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" fixed="top">
                <Navbar.Brand className="header-menu-title">
                   {this.props['menu-title']}
                

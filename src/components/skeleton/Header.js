@@ -1,8 +1,12 @@
-import React      from 'react';
-import HeaderMenu from './HeaderMenu';
+import React       from 'react';
+import HeaderMenu  from './HeaderMenu';
+import HeaderMedia from './HeaderMedia';
 
 const Header = (props) => (
-   <HeaderMenu {...props} />
+   <div id="id-app-header-root">
+      <HeaderMenu {...props} />
+      <HeaderMedia {...props} />
+   </div>
 );
 
 export default Header;
