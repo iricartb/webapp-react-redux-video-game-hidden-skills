@@ -3,19 +3,30 @@
 }
 
 .header-menu-item {
-   color: black;
-   margin-right: 1.5rem;
-   font-size: 1.1rem;
+   color: white;
+   background-color: $red;
+   margin-right: 0.6rem;
+   margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
+   font-size: 0.93rem;
+   padding-top: 0.4rem;
+   padding-bottom: 0.4rem;
+   padding-left: 0.6rem;
+   padding-right: 0.6rem;
+   border: 1px solid $red;
+   border-radius: 0.25rem;
+   text-align: center;
 }
 
 .header-menu-item:hover {
-   color: red;
+   color: white;
+   background-color: $dark-red;
    text-decoration: none;
 }
 
 .header-menu-item-active {
-   color: red;
-   font-weight: bold;
+   color: white;
+   background-color: $dark-red;
 }
 
 .header-menu-version {

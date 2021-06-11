@@ -1,5 +1,14 @@
-.header-media-video {
-   padding-top: 60px;
+.header-media {
+   position: relative;
+   padding-top: 62px;
    background-color: black;
    text-align: center;
+   line-height: 1;
+}
+
+.header-media audio {
+   position: absolute;
+   top: calc(100% - 70px);
+   left: calc(50% - 150px);
+   opacity: 80%;
 }

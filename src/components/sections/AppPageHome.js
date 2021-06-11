@@ -21,7 +21,9 @@ class AppPageHome extends React.Component {
                      <Alert variant="primary">
                         <Alert.Heading>{oHomeData.videogame.text.header}</Alert.Heading>
                         <hr />
-                        <p>{oHomeData.videogame.text.description}</p>
+                        {oHomeData.videogame.text.description.split('<br>').map(item => (
+                           <p key={item}>{item}</p>
+                        ))}
                      </Alert>
                   </Col>
                </Row>

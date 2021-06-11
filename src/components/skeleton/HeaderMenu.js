@@ -7,11 +7,16 @@ class HeaderMenu extends React.Component {
       super(props);
 
       this.handleClickVersion  = this.handleClickVersion.bind(this);
+      this.handleClickMenuItem = this.handleClickMenuItem.bind(this);
       this.handleClickLanguage = this.handleClickLanguage.bind(this);
    }
 
    handleClickVersion(e) {
       this.props.setApplicationVersion(e.target.attributes['name'].value);
+   }
+
+   handleClickMenuItem(e) {
+      this.props.setApplicationMedia(e.target.attributes['href'].value.includes('/home'));      
    }
 
    handleClickLanguage(e) {
@@ -43,14 +48,14 @@ class HeaderMenu extends React.Component {
                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
                      {this.props['menu-items'].map((oItem) => (
-                        <NavLink key={oItem.name} className="header-menu-item" activeClassName="header-menu-item-active" to={oItem.ref}>{oItem.name}</NavLink>
+                        <NavLink key={oItem.name} className="header-menu-item" activeClassName="header-menu-item-active" to={oItem.ref} onClick={this.handleClickMenuItem}>{oItem.name}</NavLink>
                      ))}
                   </Nav>
                   <Nav>
                      {this.props['menu-languages'].map((oLanguage) => {
                         if (oLanguage.name === this.props.application.language) {
                            return(
-                              <Button key={oLanguage.id} name={oLanguage.name} className="header-menu-language" variant="success">{oLanguage.description}</Button>
+                              <Button id={oLanguage.id} key={oLanguage.id} name={oLanguage.name} className="header-menu-language" variant="success">{oLanguage.description}</Button>
                            );
                         }
                         else { 

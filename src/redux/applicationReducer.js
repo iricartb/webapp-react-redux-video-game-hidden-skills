@@ -8,7 +8,10 @@ export const ApplicationReducer = (oState = oApplicationData, oAction) => {
 
       case ActionTypes.SET_APPLICATION_LANGUAGE:
          return {...oState, language: oAction.payload}; 
-              
+      
+      case ActionTypes.SET_APPLICATION_MEDIA: 
+         return {...oState, media: oAction.payload}; 
+
       default:
          return oState;
    }

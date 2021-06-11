@@ -1,13 +1,11 @@
 /* eslint-disable no-useless-constructor */
-import React                                               from 'react';
-import { Route, Switch                                   } from 'react-router-dom';
-import { connect                                         } from 'react-redux';
-import Header                                              from './Header';
-import Footer                                              from './Footer';
-import AppPageError                                        from '../htmlcodes/AppPageError';
-import CMessage                                            from '../../shared/classes/CMessage';
-import { setApplicationVersion, setApplicationLanguage   } from '../../redux/ActionCreators';
-import { TransitionGroup, CSSTransition                  } from 'react-transition-group';
+import React                                                                  from 'react';
+import { Route, Switch                                                      } from 'react-router-dom';
+import { connect                                                            } from 'react-redux';
+import Header                                                                 from './Header';
+import Footer                                                                 from './Footer';
+import { setApplicationVersion, setApplicationLanguage, setApplicationMedia } from '../../redux/ActionCreators';
+import { TransitionGroup, CSSTransition                                     } from 'react-transition-group';
 
 const oMapStateToProps = (oState) => ({
    application : oState.application,
@@ -25,7 +23,8 @@ const oMapStateToProps = (oState) => ({
 
 const oMapDispatchToProps = (dispatch) => ({
    setApplicationVersion  : (sVersion)  => {dispatch(setApplicationVersion(sVersion))},
-   setApplicationLanguage : (sLanguage) => {dispatch(setApplicationLanguage(sLanguage))}
+   setApplicationLanguage : (sLanguage) => {dispatch(setApplicationLanguage(sLanguage))},
+   setApplicationMedia    : (bMedia) => {dispatch(setApplicationMedia(bMedia))}
 });
 
 const getAppLayout = (Component, oParentProps = {}, oComponentProps = {}) => {
@@ -40,32 +39,26 @@ const getAppLayout = (Component, oParentProps = {}, oComponentProps = {}) => {
    );
 };
 
-const getAppLayoutError = (Component, oParentProps = {}, oComponentProps = {}) => {
-   return () => (
-      <div id="id-app-skeleton-layout-error-root">
-         <Component {...oParentProps} {...oComponentProps} />
-      </div>
-   );
-};
-
 class Main extends React.Component {
    constructor(props) {
       super(props);
    }
    
    render() {
-      let sMenuTitle     = this.props.header(this.props.application.version, this.props.application.language).menu.title;
-      let oMenuVersions  = this.props.header(this.props.application.version, this.props.application.language).menu.versions;
-      let oMenuItems     = this.props.header(this.props.application.version, this.props.application.language).menu.items;
-      let oMenuLanguages = this.props.header(this.props.application.version, this.props.application.language).menu.languages;
-      let sMediaClipRef  = this.props.header(this.props.application.version, this.props.application.language).clip.ref;
+      let sMenuTitle      = this.props.header(this.props.application.version, this.props.application.language).menu.title;
+      let oMenuVersions   = this.props.header(this.props.application.version, this.props.application.language).menu.versions;
+      let oMenuItems      = this.props.header(this.props.application.version, this.props.application.language).menu.items;
+      let oMenuLanguages  = this.props.header(this.props.application.version, this.props.application.language).menu.languages;
+      let sMediaClipRef   = this.props.header(this.props.application.version, this.props.application.language).clip.ref;
+      let sMediaAudioRef  = this.props.header(this.props.application.version, this.props.application.language).audio.ref;
 
       let oInjectedProps = {
-         'menu-title'     : sMenuTitle,
-         'menu-versions'  : oMenuVersions,
-         'menu-items'     : oMenuItems,
-         'menu-languages' : oMenuLanguages,
-         'media-clip-ref' : sMediaClipRef
+         'menu-title'      : sMenuTitle,
+         'menu-versions'   : oMenuVersions,
+         'menu-items'      : oMenuItems,
+         'menu-languages'  : oMenuLanguages,
+         'media-clip-ref'  : sMediaClipRef,
+         'media-audio-ref' : sMediaAudioRef
       }
 
       return(
@@ -78,7 +71,7 @@ class Main extends React.Component {
                   <Route key={oItem.name} path={oItem.ref} component={getAppLayout(oItem.component, {...this.props, ...oInjectedProps}, oItem['component-props'])} /> 
                ))}
 
-               <Route component={getAppLayoutError(AppPageError, {...this.props, ...oInjectedProps}, {code: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_CODE'), description: CMessage.getMessage(null, this.props.application.language, 'application', 'PAGE_ERROR_NOT_FOUND_DESCRIPTION')})} />
+               {(oMenuItems.length > 0) ? <Route component={getAppLayout(oMenuItems[0].component, {...this.props, ...oInjectedProps}, oMenuItems[0]['component-props'])} /> : <div></div>}
             </Switch>
             <Footer {...this.props} {...oInjectedProps} />
          </div>

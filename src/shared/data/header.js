@@ -29,7 +29,7 @@ let oHeader = (sVersion, sLanguage) => {
                   'name'            : CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_ITEMS_HOME'), 
                   'ref'             : '/home', 
                   'component'       : AppPageHome, 
-                  'component-props' : {} 
+                  'component-props' : {}
                },
                {
                   'id'              : 2,
@@ -118,7 +118,10 @@ let oHeader = (sVersion, sLanguage) => {
          },
          'clip': {
             'ref': '/media/videos/hidden-skills.mp4' 
-         }       
+         },
+         'audio': {
+            'ref': '/media/audios/hidden-skills.mp3' 
+         }     
       });
    }
 }
