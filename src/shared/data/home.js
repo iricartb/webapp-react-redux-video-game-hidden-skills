@@ -27,6 +27,18 @@ let oHome = (sVersion, sLanguage) => {
                   'image'       : sPatternUrlScreenshotsImages.replace('{1}', '2'),
                   'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_HEADER_2'),
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_DESCRIPTION_2')
+               },
+               {
+                  'id'          : 3,
+                  'image'       : sPatternUrlScreenshotsImages.replace('{1}', '3'),
+                  'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_HEADER_3'),
+                  'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_DESCRIPTION_3')
+               },
+               {
+                  'id'          : 4,
+                  'image'       : sPatternUrlScreenshotsImages.replace('{1}', '4'),
+                  'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_HEADER_4'),
+                  'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_SCREENSHOTS_TEXT_DESCRIPTION_4')
                }
             ],
          },
@@ -67,11 +79,13 @@ let oHome = (sVersion, sLanguage) => {
                   'items'  : [
                      {
                         'id'   : 1,
-                        'name' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_1')
+                        'name' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_1'),
+                        'ref'  : ''
                      },
                      {
                         'id'   : 2,
-                        'name' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_2')
+                        'name' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_AVAILABLE_PLATFORMS_RELEASES_2_TEXT_NAME_2'),
+                        'ref'  : ''
                      },
                      {
                         'id'   : 3,
@@ -107,7 +121,7 @@ let oHome = (sVersion, sLanguage) => {
                   'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_HEADER_1'),
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_DESCRIPTION_1'),
                   'progressbar' : {
-                     'value'  : 97.50,
+                     'value'  : 100.00,
                      'status' : 'success'
                   }
                },
@@ -116,7 +130,7 @@ let oHome = (sVersion, sLanguage) => {
                   'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_HEADER_2'),
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_DESCRIPTION_2'),
                   'progressbar' : {
-                     'value'  : 92.50,
+                     'value'  : 97.50,
                      'status' : 'success'
                   }
                },
@@ -125,7 +139,7 @@ let oHome = (sVersion, sLanguage) => {
                   'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_HEADER_3'),
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_DESCRIPTION_3'),
                   'progressbar' : {
-                     'value'  : 87.50,
+                     'value'  : 95.00,
                      'status' : 'success'
                   }
                },
@@ -134,8 +148,8 @@ let oHome = (sVersion, sLanguage) => {
                   'header'      : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_HEADER_4'),
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_HOME_HEADER_SECTION_TOP_COMMENTS_TEXT_DESCRIPTION_4'),
                   'progressbar' : {
-                     'value'  : 82.50,
-                     'status' : 'warning'
+                     'value'  : 92.50,
+                     'status' : 'success'
                   }
                }
             ]

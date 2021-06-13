@@ -6,6 +6,7 @@ import Header                                                                 fr
 import Footer                                                                 from './Footer';
 import { setApplicationVersion, setApplicationLanguage, setApplicationMedia } from '../../redux/ActionCreators';
 import { TransitionGroup, CSSTransition                                     } from 'react-transition-group';
+import CString                                                                from '../../shared/classes/CString';
 
 const oMapStateToProps = (oState) => ({
    application : oState.application,
@@ -42,6 +43,12 @@ const getAppLayout = (Component, oParentProps = {}, oComponentProps = {}) => {
 class Main extends React.Component {
    constructor(props) {
       super(props);
+
+      let oMediaVideos = this.props.header(this.props.application.version, this.props.application.language).videos;
+      let oMediaAudios = this.props.header(this.props.application.version, this.props.application.language).audios;
+
+      this.sMediaVideo = (oMediaVideos.length > 0) ? oMediaVideos[parseInt(Math.random() * oMediaVideos.length)] : CString.STRING_EMPTY;
+      this.sMediaAudio = (oMediaAudios.length > 0) ? oMediaAudios[parseInt(Math.random() * oMediaAudios.length)] : CString.STRING_EMPTY;
    }
    
    render() {
@@ -49,16 +56,14 @@ class Main extends React.Component {
       let oMenuVersions   = this.props.header(this.props.application.version, this.props.application.language).menu.versions;
       let oMenuItems      = this.props.header(this.props.application.version, this.props.application.language).menu.items;
       let oMenuLanguages  = this.props.header(this.props.application.version, this.props.application.language).menu.languages;
-      let sMediaClipRef   = this.props.header(this.props.application.version, this.props.application.language).clip.ref;
-      let sMediaAudioRef  = this.props.header(this.props.application.version, this.props.application.language).audio.ref;
-
+      
       let oInjectedProps = {
          'menu-title'      : sMenuTitle,
          'menu-versions'   : oMenuVersions,
          'menu-items'      : oMenuItems,
          'menu-languages'  : oMenuLanguages,
-         'media-clip-ref'  : sMediaClipRef,
-         'media-audio-ref' : sMediaAudioRef
+         'media-video'     : this.sMediaVideo,
+         'media-audio'     : this.sMediaAudio
       }
 
       return(

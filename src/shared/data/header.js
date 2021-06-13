@@ -116,12 +116,14 @@ let oHeader = (sVersion, sLanguage) => {
                }         
             ]
          },
-         'clip': {
-            'ref': '/media/videos/hidden-skills.mp4' 
-         },
-         'audio': {
-            'ref': '/media/audios/hidden-skills.mp3' 
-         }     
+         'videos': [
+            '/media/videos/video1.mp4' 
+         ],
+         'audios': [
+            '/media/audios/audio1.mp3',
+            '/media/audios/audio2.mp3',
+            '/media/audios/audio3.mp3'
+         ]
       });
    }
 }

@@ -37,7 +37,7 @@ class AppPageHome extends React.Component {
                         {oHomeData.screenshots.items.map((oItem) => {
                            return(
                               <Carousel.Item key={oItem.id}>
-                                 <img src={oItem.image} alt={oItem.header} />
+                                 <img src={oItem.image} alt={oItem.header} style={{width:'100%'}}/>
                                  <Carousel.Caption>
                                     <h3>{oItem.header}</h3>
                                     <p>{oItem.description}</p>
@@ -45,7 +45,7 @@ class AppPageHome extends React.Component {
                               </Carousel.Item>         
                            );      
                         })}
-                  </Carousel>
+                     </Carousel>
                   </Col>
                </Row>
             </Container>
