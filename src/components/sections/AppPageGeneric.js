@@ -91,8 +91,8 @@ class AppPageGeneric extends React.Component {
                            <tbody>
                               <tr>
                                  <td id="id-app-page-generic-skeleton">
-                              {((this.props.data.xml.skeleton.html === undefined) || ((this.props.data.xml.skeleton.html !== undefined) && (!this.props.data.xml.skeleton.html))) ? ((this.props.data.xml.skeleton.description !== undefined) ? this.props.data.xml.skeleton.description : this.props.data.xml.skeleton) : CString.STRING_EMPTY}
-                           </td>
+                                    {((this.props.data.xml.skeleton.html === undefined) || ((this.props.data.xml.skeleton.html !== undefined) && (!this.props.data.xml.skeleton.html))) ? ((this.props.data.xml.skeleton.description !== undefined) ? this.props.data.xml.skeleton.description : this.props.data.xml.skeleton) : CString.STRING_EMPTY}
+                                 </td>
                               </tr>
                            </tbody>
                         </Table>
@@ -104,8 +104,8 @@ class AppPageGeneric extends React.Component {
                            <tbody>
                               <tr>
                                  <td id="id-app-page-generic-example">
-                              {((this.props.data.xml.example.html === undefined) || ((this.props.data.xml.example.html !== undefined) && (!this.props.data.xml.example.html))) ? ((this.props.data.xml.example.description !== undefined) ? this.props.data.xml.example.description : this.props.data.xml.example) : CString.STRING_EMPTY}
-                           </td>
+                                    {((this.props.data.xml.example.html === undefined) || ((this.props.data.xml.example.html !== undefined) && (!this.props.data.xml.example.html))) ? ((this.props.data.xml.example.description !== undefined) ? this.props.data.xml.example.description : this.props.data.xml.example) : CString.STRING_EMPTY}
+                                 </td>
                               </tr>
                            </tbody>
                         </Table>

@@ -58,6 +58,18 @@ let oObstacles = (sVersion, sLanguage) => {
                      'image'       : sPatternUrlObstaclesImages.replace('{1}', '7'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_1'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_1'),  
+                  },
+                  {
+                     'id'          : 2,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '8'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_2'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_2'),  
+                  },
+                  {
+                     'id'          : 3,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '9'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_3'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_3'),  
                   }
                ]       
             } 
@@ -70,7 +82,7 @@ let oObstacles = (sVersion, sLanguage) => {
                   {
                      'id'     : 1,
                      'name'   : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_NAME_1'),
-                     'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_1', [3]), 
+                     'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_1', ['2, blue, green, purple, red, yellow']), 
                   },
                   {
                      'id'     : 2,
@@ -186,6 +198,11 @@ let oObstacles = (sVersion, sLanguage) => {
                      'id'     : 24,
                      'name'   : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_NAME_24'),
                      'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_24'), 
+                  },
+                  {
+                     'id'     : 25,
+                     'name'   : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_NAME_25'),
+                     'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_25'), 
                   }
                ],
                'end': CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION_END'),
