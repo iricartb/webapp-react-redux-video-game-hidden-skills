@@ -40,6 +40,12 @@ let oSplashes = (sVersion, sLanguage) => {
                      'image'       : sPatternUrlSplashesImages.replace('{1}', '5'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SPLASHES_HEADER_SECTION_SPLASHES_TEXT_INSTANCE_5'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SPLASHES_HEADER_SECTION_SPLASHES_TEXT_DESCRIPTION_5'),  
+                  },
+                  {
+                     'id'          : 6,
+                     'image'       : sPatternUrlSplashesImages.replace('{1}', '6'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SPLASHES_HEADER_SECTION_SPLASHES_TEXT_INSTANCE_6'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SPLASHES_HEADER_SECTION_SPLASHES_TEXT_DESCRIPTION_6'),  
                   }
                ]
             }

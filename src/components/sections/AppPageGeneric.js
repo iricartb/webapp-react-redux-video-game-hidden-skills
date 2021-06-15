@@ -38,9 +38,8 @@ class AppPageGeneric extends React.Component {
                                     {oDataType.items.map((oData) => {
                                        return(
                                           <tr key={oData.id}>
-                                             <td><image src={oData.image} /></td>
-                                             <td>{oData.instance}</td>
-                                             <td>{oData.description}</td>
+                                             <td style={{width:'20%'}}>{oData.instance}</td>
+                                             <td style={{width:'80%'}}>{oData.description}</td>
                                           </tr>
                                        );                      
                                     })}
@@ -70,8 +69,8 @@ class AppPageGeneric extends React.Component {
                            {this.props.data.xml.attributes.items.map((oXMLAttribute) => {
                               return(
                                  <tr key={oXMLAttribute.id}>
-                                    <td>{oXMLAttribute.name}</td>
-                                    <td>{oXMLAttribute.values}</td>
+                                    <td style={{width:'20%'}}>{oXMLAttribute.name}</td>
+                                    <td style={{width:'80%'}}>{oXMLAttribute.values}</td>
                                  </tr>
                               );                      
                            })}

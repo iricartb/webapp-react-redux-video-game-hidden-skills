@@ -8,64 +8,64 @@ let oLights = (sVersion, sLanguage) => {
       return ({
          'types': [
             {
-             'id': 1,
-               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS'),
-               'items'  : [
-                  {
-                     'id'          : 1,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '1'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_1'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_1'),
-                  },
-                  {
-                     'id'          : 2,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '2'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_2'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_2'),  
-                  },
-                  {
-                     'id'          : 3,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '3'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_3'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_3'),  
-                  },
-                  {
-                     'id'          : 4,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '4'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_4'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_4'),  
-                  }
-               ]
-            },
-            {
-               'id'     : 2,
+               'id'     : 1,
                'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS'),
                'items'  : [
                   {
                      'id'          : 1,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '5'),
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '1'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_INSTANCE_1'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_DESCRIPTION_1'),  
                   },
                   {
                      'id'          : 2,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '6'),
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '2'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_INSTANCE_2'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_DESCRIPTION_2'),  
                   },
                   {
                      'id'          : 3,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '7'),
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '3'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_INSTANCE_3'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_DESCRIPTION_3'),  
                   },
                   {
                      'id'          : 4,
-                     'image'       : sPatternUrlLightsImages.replace('{1}', '8'),
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '4'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_INSTANCE_4'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_ALARM_LIGHTS_TEXT_DESCRIPTION_4'),  
                   }
                ]       
+            },
+            {
+               'id': 2,
+               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS'),
+               'items'  : [
+                  {
+                     'id'          : 1,
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '5'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_1'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_1'),
+                  },
+                  {
+                     'id'          : 2,
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '6'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_2'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_2'),  
+                  },
+                  {
+                     'id'          : 3,
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '7'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_3'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_3'),  
+                  },
+                  {
+                     'id'          : 4,
+                     'image'       : sPatternUrlLightsImages.replace('{1}', '8'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_INSTANCE_4'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_LIGHTS_HEADER_SECTION_SIMPLE_LIGHTS_TEXT_DESCRIPTION_4'),  
+                  }
+               ]
             }
          ],
          'xml': {

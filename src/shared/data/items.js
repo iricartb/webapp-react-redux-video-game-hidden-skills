@@ -9,25 +9,43 @@ let oItems = (sVersion, sLanguage) => {
          'types': [
             {
                'id'     : 1,
-               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS'),
+               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS'),
                'items'  : [
                   {
                      'id'          : 1,
                      'image'       : sPatternUrlItemsImages.replace('{1}', '1'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_1'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_1'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_1'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_1'),
                   },
                   {
                      'id'          : 2,
                      'image'       : sPatternUrlItemsImages.replace('{1}', '2'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_2'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_2'),  
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_2'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_2'),  
                   },
                   {
                      'id'          : 3,
                      'image'       : sPatternUrlItemsImages.replace('{1}', '3'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_3'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_3'),  
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_3'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_3'),  
+                  },
+                  {
+                     'id'          : 4,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '4'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_4'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_4'),  
+                  },
+                  {
+                     'id'          : 5,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '5'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_5'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_5'),  
+                  },
+                  {
+                     'id'          : 6,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '6'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_INSTANCE_6'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_DECORATIVE_ITEMS_TEXT_DESCRIPTION_6'),  
                   }
                ]
             },
@@ -37,29 +55,53 @@ let oItems = (sVersion, sLanguage) => {
                'items'  : [
                   {
                      'id'          : 1,
-                     'image'       : sPatternUrlItemsImages.replace('{1}', '4'),
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '7'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_INSTANCE_1'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_DESCRIPTION_1'),  
                   },
                   {
                      'id'          : 2,
-                     'image'       : sPatternUrlItemsImages.replace('{1}', '5'),
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '8'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_INSTANCE_2'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_DESCRIPTION_2'),  
                   },
                   {
                      'id'          : 3,
-                     'image'       : sPatternUrlItemsImages.replace('{1}', '6'),
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '9'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_INSTANCE_3'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_DESCRIPTION_3'),  
                   },
                   {
                      'id'          : 4,
-                     'image'       : sPatternUrlItemsImages.replace('{1}', '7'),
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '10'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_INSTANCE_4'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_HELP_ITEMS_TEXT_DESCRIPTION_4'),  
                   }
                ]       
+            },
+            {
+               'id'     : 3,
+               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS'),
+               'items'  : [
+                  {
+                     'id'          : 1,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '11'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_1'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_1'),
+                  },
+                  {
+                     'id'          : 2,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '12'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_2'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_2'),  
+                  },
+                  {
+                     'id'          : 3,
+                     'image'       : sPatternUrlItemsImages.replace('{1}', '13'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_INSTANCE_3'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ITEMS_HEADER_SECTION_SCORE_ITEMS_TEXT_DESCRIPTION_3'),  
+                  }
+               ]
             }
          ],
          'xml': {

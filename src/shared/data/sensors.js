@@ -52,6 +52,18 @@ let oSensors = (sVersion, sLanguage) => {
                      'image'       : sPatternUrlSensorsImages.replace('{1}', '7'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_INSTANCE_7'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_DESCRIPTION_7'),
+                  },
+                  {
+                     'id'          : 8,
+                     'image'       : sPatternUrlSensorsImages.replace('{1}', '8'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_INSTANCE_8'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_DESCRIPTION_8'),
+                  },
+                  {
+                     'id'          : 9,
+                     'image'       : sPatternUrlSensorsImages.replace('{1}', '9'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_INSTANCE_9'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_SENSORS_HEADER_SECTION_SENSORS_TEXT_DESCRIPTION_9'),
                   }
                ]
             }

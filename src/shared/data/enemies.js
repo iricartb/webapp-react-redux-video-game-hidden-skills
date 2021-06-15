@@ -34,7 +34,7 @@ let oEnemies = (sVersion, sLanguage) => {
                   {
                      'id'     : 1,
                      'name'   : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ENEMIES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_NAME_1'),
-                     'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ENEMIES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_1', [3]), 
+                     'values' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_ENEMIES_HEADER_SECTION_XML_SPECIFICATION_ATTRIBUTE_VALUES_1'), 
                   },
                   {
                      'id'     : 2,

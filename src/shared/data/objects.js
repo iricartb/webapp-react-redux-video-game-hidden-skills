@@ -58,6 +58,36 @@ let oObjects = (sVersion, sLanguage) => {
                      'image'       : sPatternUrlObjectsImages.replace('{1}', '8'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_8'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_8'),  
+                  },
+                  {
+                     'id'          : 9,
+                     'image'       : sPatternUrlObjectsImages.replace('{1}', '9'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_9'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_9'),  
+                  },
+                  {
+                     'id'          : 10,
+                     'image'       : sPatternUrlObjectsImages.replace('{1}', '10'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_10'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_10'),  
+                  },
+                  {
+                     'id'          : 11,
+                     'image'       : sPatternUrlObjectsImages.replace('{1}', '11'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_11'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_11'),  
+                  },
+                  {
+                     'id'          : 12,
+                     'image'       : sPatternUrlObjectsImages.replace('{1}', '12'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_12'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_12'),  
+                  },
+                  {
+                     'id'          : 13,
+                     'image'       : sPatternUrlObjectsImages.replace('{1}', '13'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_INSTANCE_13'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBJECTS_HEADER_SECTION_OBJECTS_TEXT_DESCRIPTION_13'),  
                   }
                ]
             }

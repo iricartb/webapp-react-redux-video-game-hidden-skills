@@ -9,70 +9,70 @@ let oObstacles = (sVersion, sLanguage) => {
          'types': [
             {
                'id'     : 1,
-               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES'),
-               'items'  : [
-                  {
-                     'id'          : 1,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '1'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_1'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_1'),
-                  },
-                  {
-                     'id'          : 2,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '2'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_2'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_2'),
-                  },
-                  {
-                     'id'          : 3,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '3'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_3'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_3'),
-                  },
-                  {
-                     'id'          : 4,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '4'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_4'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_4'),
-                  },
-                  {
-                     'id'          : 5,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '5'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_5'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_5'),
-                  },
-                  {
-                     'id'          : 6,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '6'),
-                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_6'),
-                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_6'),
-                  }
-               ]
-            },
-            {
-               'id'     : 2,
                'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES'),
                'items'  : [
                   {
                      'id'          : 1,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '7'),
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '1'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_1'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_1'),  
                   },
                   {
                      'id'          : 2,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '8'),
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '2'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_2'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_2'),  
                   },
                   {
                      'id'          : 3,
-                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '9'),
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '3'),
                      'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_INSTANCE_3'),
                      'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_COLUMN_OBSTACLES_TEXT_DESCRIPTION_3'),  
                   }
                ]       
-            } 
+            },
+            {
+               'id'     : 2,
+               'header' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES'),
+               'items'  : [
+                  {
+                     'id'          : 1,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '4'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_1'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_1'),
+                  },
+                  {
+                     'id'          : 2,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '5'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_2'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_2'),
+                  },
+                  {
+                     'id'          : 3,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '6'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_3'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_3'),
+                  },
+                  {
+                     'id'          : 4,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '7'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_4'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_4'),
+                  },
+                  {
+                     'id'          : 5,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '8'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_5'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_5'),
+                  },
+                  {
+                     'id'          : 6,
+                     'image'       : sPatternUrlObstaclesImages.replace('{1}', '9'),
+                     'instance'    : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_INSTANCE_6'),
+                     'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_WALL_OBSTACLES_TEXT_DESCRIPTION_6'),
+                  }
+               ]
+            }
          ],
          'xml': {
             'header'     : CMessage.getMessage(sVersion, sLanguage, 'main', 'PAGE_OBSTACLES_HEADER_SECTION_XML_SPECIFICATION'),
