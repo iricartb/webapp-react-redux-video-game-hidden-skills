@@ -111,8 +111,18 @@ let oHeader = (sVersion, sLanguage) => {
                },
                {
                   'id'          : 5,
+                  'name'        : CApplication.APPLICATION_LANGUAGE_JAPANESE,
+                  'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_JAPANESE')
+               },
+               {
+                  'id'          : 6,
                   'name'        : CApplication.APPLICATION_LANGUAGE_RUSSIAN,
                   'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_RUSSIAN')
+               },
+               {
+                  'id'          : 7,
+                  'name'        : CApplication.APPLICATION_LANGUAGE_CHINESE,
+                  'description' : CMessage.getMessage(sVersion, sLanguage, 'main', 'HEADER_MENU_LANGUAGES_CHINESE')       
                }         
             ]
          },
